@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AB84EA927FE0AB7003E4B68 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB84EA827FE0AB7003E4B68 /* WidgetKit.framework */; };
+		9AB84EAB27FE0AB7003E4B68 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB84EAA27FE0AB7003E4B68 /* SwiftUI.framework */; };
+		9AB84EAE27FE0AB7003E4B68 /* DrinkUpWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB84EAD27FE0AB7003E4B68 /* DrinkUpWidget.swift */; };
+		9AB84EB127FE0ABA003E4B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB84EB027FE0ABA003E4B68 /* Assets.xcassets */; };
+		9AB84EB327FE0ABA003E4B68 /* DrinkUpWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9AB84EAF27FE0AB8003E4B68 /* DrinkUpWidget.intentdefinition */; };
+		9AB84EB427FE0ABA003E4B68 /* DrinkUpWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9AB84EAF27FE0AB8003E4B68 /* DrinkUpWidget.intentdefinition */; };
+		9AB84EB727FE0ABA003E4B68 /* DrinkUpWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9AB84EA627FE0AB7003E4B68 /* DrinkUpWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9AF968F627FDEC9100007985 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF968F527FDEC9100007985 /* Tests_iOS.swift */; };
 		9AF968F827FDEC9100007985 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF968F727FDEC9100007985 /* Tests_iOSLaunchTests.swift */; };
 		9AF9690227FDEC9100007985 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9690127FDEC9100007985 /* Tests_macOS.swift */; };
@@ -20,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9AB84EB527FE0ABA003E4B68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AF968D827FDEC8D00007985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AB84EA527FE0AB7003E4B68;
+			remoteInfo = DrinkUpWidgetExtension;
+		};
 		9AF968F227FDEC9100007985 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AF968D827FDEC8D00007985 /* Project object */;
@@ -36,7 +50,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9AB84EB827FE0ABA003E4B68 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9AB84EB727FE0ABA003E4B68 /* DrinkUpWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9AB84EA627FE0AB7003E4B68 /* DrinkUpWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DrinkUpWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB84EA827FE0AB7003E4B68 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9AB84EAA27FE0AB7003E4B68 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9AB84EAD27FE0AB7003E4B68 /* DrinkUpWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUpWidget.swift; sourceTree = "<group>"; };
+		9AB84EAF27FE0AB8003E4B68 /* DrinkUpWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DrinkUpWidget.intentdefinition; sourceTree = "<group>"; };
+		9AB84EB027FE0ABA003E4B68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AB84EB227FE0ABA003E4B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AF968DD27FDEC8D00007985 /* DrinkUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUpApp.swift; sourceTree = "<group>"; };
 		9AF968DE27FDEC8D00007985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9AF968DF27FDEC9100007985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +87,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9AB84EA327FE0AB7003E4B68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB84EAB27FE0AB7003E4B68 /* SwiftUI.framework in Frameworks */,
+				9AB84EA927FE0AB7003E4B68 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AF968E127FDEC9100007985 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,6 +127,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AB84EA727FE0AB7003E4B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AB84EA827FE0AB7003E4B68 /* WidgetKit.framework */,
+				9AB84EAA27FE0AB7003E4B68 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AB84EAC27FE0AB7003E4B68 /* DrinkUpWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9AB84EAD27FE0AB7003E4B68 /* DrinkUpWidget.swift */,
+				9AB84EAF27FE0AB8003E4B68 /* DrinkUpWidget.intentdefinition */,
+				9AB84EB027FE0ABA003E4B68 /* Assets.xcassets */,
+				9AB84EB227FE0ABA003E4B68 /* Info.plist */,
+			);
+			path = DrinkUpWidget;
+			sourceTree = "<group>";
+		};
 		9AF968D727FDEC8D00007985 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +154,8 @@
 				9AF968EB27FDEC9100007985 /* macOS */,
 				9AF968F427FDEC9100007985 /* Tests iOS */,
 				9AF9690027FDEC9100007985 /* Tests macOS */,
+				9AB84EAC27FE0AB7003E4B68 /* DrinkUpWidget */,
+				9AB84EA727FE0AB7003E4B68 /* Frameworks */,
 				9AF968E527FDEC9100007985 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +177,7 @@
 				9AF968EA27FDEC9100007985 /* DrinkUp.app */,
 				9AF968F127FDEC9100007985 /* Tests iOS.xctest */,
 				9AF968FD27FDEC9100007985 /* Tests macOS.xctest */,
+				9AB84EA627FE0AB7003E4B68 /* DrinkUpWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +211,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9AB84EA527FE0AB7003E4B68 /* DrinkUpWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AB84EBB27FE0ABA003E4B68 /* Build configuration list for PBXNativeTarget "DrinkUpWidgetExtension" */;
+			buildPhases = (
+				9AB84EA227FE0AB7003E4B68 /* Sources */,
+				9AB84EA327FE0AB7003E4B68 /* Frameworks */,
+				9AB84EA427FE0AB7003E4B68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrinkUpWidgetExtension;
+			productName = DrinkUpWidgetExtension;
+			productReference = 9AB84EA627FE0AB7003E4B68 /* DrinkUpWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9AF968E327FDEC9100007985 /* DrinkUp (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AF9690D27FDEC9100007985 /* Build configuration list for PBXNativeTarget "DrinkUp (iOS)" */;
@@ -151,10 +235,12 @@
 				9AF968E027FDEC9100007985 /* Sources */,
 				9AF968E127FDEC9100007985 /* Frameworks */,
 				9AF968E227FDEC9100007985 /* Resources */,
+				9AB84EB827FE0ABA003E4B68 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9AB84EB627FE0ABA003E4B68 /* PBXTargetDependency */,
 			);
 			name = "DrinkUp (iOS)";
 			productName = "DrinkUp (iOS)";
@@ -224,6 +310,9 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					9AB84EA527FE0AB7003E4B68 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					9AF968E327FDEC9100007985 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -257,11 +346,20 @@
 				9AF968E927FDEC9100007985 /* DrinkUp (macOS) */,
 				9AF968F027FDEC9100007985 /* Tests iOS */,
 				9AF968FC27FDEC9100007985 /* Tests macOS */,
+				9AB84EA527FE0AB7003E4B68 /* DrinkUpWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9AB84EA427FE0AB7003E4B68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB84EB127FE0ABA003E4B68 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AF968E227FDEC9100007985 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,10 +393,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9AB84EA227FE0AB7003E4B68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB84EB327FE0ABA003E4B68 /* DrinkUpWidget.intentdefinition in Sources */,
+				9AB84EAE27FE0AB7003E4B68 /* DrinkUpWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AF968E027FDEC9100007985 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB84EB427FE0ABA003E4B68 /* DrinkUpWidget.intentdefinition in Sources */,
 				9AF9690727FDEC9100007985 /* ContentView.swift in Sources */,
 				9AF9690527FDEC9100007985 /* DrinkUpApp.swift in Sources */,
 			);
@@ -334,6 +442,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9AB84EB627FE0ABA003E4B68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AB84EA527FE0AB7003E4B68 /* DrinkUpWidgetExtension */;
+			targetProxy = 9AB84EB527FE0ABA003E4B68 /* PBXContainerItemProxy */;
+		};
 		9AF968F327FDEC9100007985 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9AF968E327FDEC9100007985 /* DrinkUp (iOS) */;
@@ -347,6 +460,65 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9AB84EB927FE0ABA003E4B68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3D6TB2F5RY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrinkUpWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DrinkUpWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victor.drinkupwater.DrinkUp.DrinkUpWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AB84EBA27FE0ABA003E4B68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3D6TB2F5RY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrinkUpWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DrinkUpWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victor.drinkupwater.DrinkUp.DrinkUpWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9AF9690B27FDEC9100007985 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -459,6 +631,7 @@
 		9AF9690E27FDEC9100007985 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -489,6 +662,7 @@
 		9AF9690F27FDEC9100007985 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -655,6 +829,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9AB84EBB27FE0ABA003E4B68 /* Build configuration list for PBXNativeTarget "DrinkUpWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB84EB927FE0ABA003E4B68 /* Debug */,
+				9AB84EBA27FE0ABA003E4B68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9AF968DB27FDEC8D00007985 /* Build configuration list for PBXProject "DrinkUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
