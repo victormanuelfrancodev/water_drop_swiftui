@@ -28,3 +28,9 @@ Draw the background of drop usign mask
                     stops: [.init(color: .clear, location: 0), .init(color: .clear, location: 1 - goalProgress), .init(color: .white, location: 1 - goalProgress),.init(color: .white, location: 1)], startPoint: .top, endPoint: .bottom)
                 ).overlay(
                     Image(systemName: "drop")
+                    
+#### Add value challenge - Goal of day                    
+
+<img width="299" alt="image" src="https://user-images.githubusercontent.com/27299953/162036836-2b5ca04f-7a2a-44f8-b4ea-5f68e5e8daf1.png">
+
+
